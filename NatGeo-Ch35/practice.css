@@ -1,0 +1,46 @@
+table{
+    border-collapse: collapse; 
+    border: 1px; 
+}
+td, th{
+    border: 1px solid black; 
+    width: 100px;
+    text-align: center;
+
+}
+.red-flag{
+    color: red;
+}
+
+/*flex-box*/
+flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    height: 600px;
+    align-items: flex-start;
+
+
+}
+.flex-item{
+    background-color: aquamarine;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+
+}
+/*responsive*/
+.site-header nav{
+    display: flex;
+    flex-direction: column;
+}
+@media(min-width:768x){
+    /*the elements that will be modoified*/
+   .site-header nav{
+/*desktp*/
+flex-direction: row;
+justify-content: space-between;
+
+   }
+}
